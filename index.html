@@ -109,11 +109,15 @@
 </div>
 
 <!-- SECCIÓN RELOJ -->
-<section class="flex items-center justify-center bg-gray-200 py-8 px-4">
-    <div class="rounded-full p-8 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl">
-        <div class="text-center pb-4">
+<section class="flex flex-col items-center justify-center bg-gray-200 py-8 ">
+
+    <img src="Invitacion Miguel y Jenni.png" class="" alt="">
+
+    <div class="rounded-full p-8 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl ">
+        <!-- <div class="text-center pb-4">
             <span class="font-secondary text-blue-800 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Faltan</span>
-        </div>
+        </div> -->
+
         <div class="flex flex-wrap justify-center rounded-full space-x-4 sm:space-x-6">
             <div class="flex flex-col items-center border-r-0 sm:border-r-2 sm:pr-4 border-black mb-4 sm:mb-0">
                 <span id="days" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">00</span>
@@ -250,7 +254,9 @@
     </div>
 </section>
 
-<div class="p-8  max-w-md mx-auto text-center"   style="background-image: url('fondo.jpg');">
+<!-- DRESS CODE -->
+
+<div class="py-20 px-14 max-w-md mx-auto text-center"   style="background-image: url('fondo.jpg');">
     <!-- Icons Section -->
     <div class="flex justify-center mb-4">
         <div class="w-16 h-16">
@@ -260,7 +266,7 @@
     </div>
     
     <!-- Dress Code Title -->
-    <h2 class="text-3xl font-semibold mb-2">Dress Code</h2>
+    <h2 class="text-4xl font-secondary mb-2">Dress Code</h2>
     <p class="text-lg text-gray-600 mb-6">Código de Vestimenta</p>
     
     <!-- Dress Code Options -->
@@ -274,7 +280,9 @@
     
 </div>
 
-<div class="bg-gray-50 p-8 rounded-lg max-w-md mx-auto text-center" style="background-image: url('fondo\ inicio.jpeg');">
+<!-- REGALO DE BODA -->
+
+<div class="bg-gray-200 bg-opacity-80 p-16 max-w-md mx-auto text-center" style="background-image: url('fondo\ 2.jpg');">
     <!-- Icono de Pasaporte -->
     <div class="flex justify-center mb-4">
         <!-- Aquí iría el ícono del pasaporte -->
@@ -282,7 +290,7 @@
     </div>
     
     <!-- Título de Regalo de Bodas -->
-    <h2 class="text-4xl font-semibold italic mb-2">Regalo de bodas</h2>
+    <h2 class="text-4xl font-secondary italic mb-2">Regalo de bodas</h2>
     
     <!-- Mensaje -->
     <p class="text-lg text-gray-600 mb-6">
@@ -311,6 +319,100 @@
     </div>
 </div>
 
+
+<!-- CONFIRMAR ASISTENCIA -->
+
+<div class="min-h-screen flex items-center justify-center" style="background-image: url('fondo\ 1.jpg');">
+    <!-- Form Box -->
+    <div class=" p-8 rounded-lg shadow-lg w-full max-w-lg">
+        <h2 class="text-2xl font-bold mb-4 text-center">Confirmar asistencia</h2>
+        <p class="text-center mb-6">¡Ojalá contemos contigo! Te pedimos que rellenes el formulario y pulses el botón así nos ayudas a contabilizarlo.</p>
+        
+        <form class="space-y-4">
+            <!-- ¿Asistirás? -->
+            <div>
+                <label for="asistencia" class="block text-sm font-medium">¿Asistirás?</label>
+                <select id="asistencia" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Confirma asistencia</option>
+                    <option value="yes">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <!-- Nombre -->
+            <div>
+                <label for="nombre" class="block text-sm font-medium">Nombre</label>
+                <input type="text" id="nombre" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <!-- Número de invitados y Teléfono -->
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label for="invitados" class="block text-sm font-medium">Número invitados</label>
+                    <input type="number" id="invitados" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="telefono" class="block text-sm font-medium">Teléfono</label>
+                    <input type="tel" id="telefono" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+            </div>
+
+            <!-- Servicio autobús -->
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label for="servicio-autobus" class="block text-sm font-medium">Servicio autobús</label>
+                    <select id="servicio-autobus" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        <option value="">Elige una opción</option>
+                        <option value="option1">Opción 1</option>
+                        <option value="option2">Opción 2</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="plazas" class="block text-sm font-medium">N° de plazas</label>
+                    <input type="number" id="plazas" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+            </div>
+
+            <!-- Canción que no puede faltar -->
+            <div>
+                <label for="cancion" class="block text-sm font-medium">Escribe tu canción que no puede faltar</label>
+                <textarea id="cancion" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+
+            <!-- Especificaciones alimenticias -->
+            <div>
+                <label class="block text-sm font-medium mb-1">Especificaciones alimenticias</label>
+                <div class="grid grid-cols-2 gap-2">
+                    <label class="flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">Vegetariano</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">Vegano</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">Celiaco</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">Intolerante a la lactosa</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">Intolerante a los frutos secos</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" class="form-checkbox">
+                        <span class="ml-2">Otras (añadir debajo)</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Escribe cualquier duda -->
+            <div>
+                <label for="duda" class="block tex
 
 
         
